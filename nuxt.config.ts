@@ -8,12 +8,7 @@ export default defineNuxtConfig({
 	compatibilityDate: "2024-04-03",
 	content: {
 		preview: {
-			api: "https://api.nuxt.studio",
-			gitInfo: {
-				name: "Your repository name",
-				owner: "Your repository owner/organization",
-				url: "Your GitHub repository URL"
-			}
+			api: "https://api.nuxt.studio"
 		}
 	}
 });
