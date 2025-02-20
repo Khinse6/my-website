@@ -8,7 +8,12 @@ export default defineNuxtConfig({
 	compatibilityDate: "2024-04-03",
 	content: {
 		preview: {
-			api: "https://api.nuxt.studio"
+			api: "https://api.nuxt.studio",
+			gitInfo: {
+				name: "my-website",
+				owner: "Khinse6",
+				url: "https://github.com/Khinse6/my-website"
+			}
 		}
 	}
 });
