@@ -14,5 +14,3 @@ const { data: content } = await useAsyncData("content", () =>
 	queryCollection("content").all()
 );
 </script>
-
-<style></style>

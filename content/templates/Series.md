@@ -1,21 +1,32 @@
-{Tags}
-[Enemy Team]()
-Patch: {}
-## Series Prep
+<%*
+const date = await tp.system.prompt("Enter the date (YYYY-MM-DD)", tp.date.now("YYYY-MM-DD"));
+let team1 = await tp.system.prompt("Team 1?");
+let team2 = await tp.system.prompt("Team 2?");
+let isScrimm = await tp.system.prompt("Is this a scrimm? (y/n)", "n");
+team1 = team1.toUpperCase();
+team2 = team2.toUpperCase();
+isScrimm = team1.toLowerCase();
+const alias = await tp.system.prompt("File alias?", `${team1} vs ${team2} | ${date}`);
+const filename = `${date}-${team1}-vs-${team2}`.toLowerCase();
+await tp.file.rename(filename);
+%>---
+aliases:
+  - <% alias %>
+date: <% date %>
+tags:
+  - <% team1 %>
+  - <% team2 %>
+  - <% isScrimm === "y" ? 'scrimm' : '' %>
+---
 
-### Draft Blue
-###### Bans Prio:
--
-###### Pick Prio:
-1.
-##### Obs: 
+# 📝 Pre-Game Prep  
+- **Strategy:**  
+- **Enemy Weaknesses:**  
+- **Win Condition:**  
 
-### Draft Red
-###### Bans Prio:
--
-###### Pick Prio:
-1.
-##### Obs: 
+---
 
-### Reviews
-- [[ ]]
+# 📊 Post-Game Review  
+- **Outcome:**  
+- **What Worked:**  
+- **What Needs Improvement:**  
