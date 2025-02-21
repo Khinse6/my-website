@@ -5,8 +5,9 @@ export default defineContentConfig({
 		content: defineCollection({
 			type: "page",
 			source: {
-				include: "**",
-				exclude: ["**/.obsidian/**", "**/templates/**"]
+				include: "**/.md",
+				exclude: ["**/.obsidian/**", "**/templates/**"],
+				repository: "https://github.com/Khinse6/obsidian"
 			}
 		})
 	}

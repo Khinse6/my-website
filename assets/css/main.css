@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+	--font-sans: "Public Sans", sans-serif;
+	--color-background: oklch(13.83% 0.0718 304.99);
+
+	--color-rorange-50: oklch(93.179% 0.03915 59.864);
+	--color-rorange-100: oklch(90.441% 0.05577 57.337);
+	--color-rorange-200: oklch(85.195% 0.09015 57.429);
+	--color-rorange-300: oklch(80.151% 0.12228 56.468);
+	--color-rorange-400: oklch(75.59% 0.15336 54.405);
+	--color-rorange-500: oklch(70.035% 0.18647 48.136);
+	--color-rorange-600: oklch(59.302% 0.16003 47.76);
+	--color-rorange-700: oklch(47.277% 0.1246 48.769);
+	--color-rorange-800: oklch(34.255% 0.08745 50.115);
+	--color-rorange-900: oklch(19.878% 0.04428 59.489);
+	--color-rorange-950: oklch(11.405% 0.02383 77.359);
+
+	--color-rcharcoal-50: oklch(60.841% 0.01347 259.82);
+	--color-rcharcoal-100: oklch(58.217% 0.01312 264.47);
+	--color-rcharcoal-200: oklch(53.018% 0.012 261.77);
+	--color-rcharcoal-300: oklch(47.776% 0.01033 264.47);
+	--color-rcharcoal-400: oklch(42.296% 0.00914 260.73);
+	--color-rcharcoal-500: oklch(37.525% 0.00892 268.42);
+	--color-rcharcoal-600: oklch(32.814% 0.00597 258.35);
+	--color-rcharcoal-700: oklch(27.701% 0.00568 271.21);
+	--color-rcharcoal-800: oklch(22.578% 0.00247 247.94);
+	--color-rcharcoal-900: oklch(16.77% 0.00266 247.99);
+	--color-rcharcoal-950: oklch(13.846% 0.00189 196.94);
+}
+
+@layer base {
+	body {
+		background-color: var(--color-background);
+	}
+	a {
+		color: red;
+		font-size: x-large;
+	}
+}
