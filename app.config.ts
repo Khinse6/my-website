@@ -1,1 +1,11 @@
-export default defineAppConfig({});
+export default defineAppConfig({
+	ui: {
+		colors: {
+			primary: "indigo",
+			neutral: "zinc"
+		},
+		container: {
+			base: "max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8"
+		}
+	}
+});

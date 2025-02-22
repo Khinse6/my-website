@@ -12,10 +12,8 @@ if (!page.value) {
 		fatal: true
 	});
 }
-const appConfig = useAppConfig();
 </script>
 
 <template>
-	<p>{{ appConfig.ui.colors.primary }}</p>
 	<ContentRenderer v-if="page" :value="page" :prose="false" />
 </template>

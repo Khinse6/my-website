@@ -11,9 +11,9 @@ const { data } = await useAsyncData("navigation", () => {
 	return queryCollectionNavigation("content");
 });
 
-const appConfig = useAppConfig();
 const route = useRoute();
 const defaultColor = "indigo";
+const appConfig = useAppConfig();
 const routeColors: Record<string, string> = {
 	projects: defaultColor,
 	hobbies: "amber"
@@ -31,7 +31,13 @@ const getPrimaryColor = (path: string): string => {
 watch(
 	() => route.path,
 	(newPath) => {
-		appConfig.ui.colors.primary = getPrimaryColor(newPath);
+		appConfig.ui = {
+			...appConfig.ui, // Preserve existing config
+			colors: {
+				...appConfig.ui.colors, // Preserve other color settings
+				primary: getPrimaryColor(newPath)
+			}
+		};
 	},
 	{ immediate: true }
 );
