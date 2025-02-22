@@ -11,5 +11,10 @@ export default defineNuxtConfig({
 	vite: { plugins: [tailwindcss()] },
 	ui: {
 		colorMode: false
+	},
+	fonts: {
+		experimental: {
+			processCSSVariables: true
+		}
 	}
 });
