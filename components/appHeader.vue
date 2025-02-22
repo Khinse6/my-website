@@ -4,7 +4,7 @@
 	>
 		<UContainer>
 			<UNavigationMenu
-				:items="items"
+				:items="navigation"
 				class="w-full justify-center"
 				:ui="{ list: 'gap-10', link: 'text-base' }"
 				content-orientation="vertical"
@@ -15,13 +15,9 @@
 </template>
 
 <script lang="ts" setup>
-const items = ref([
-	{ label: "Home", to: "/" },
-	{ label: "Projects", to: "/projects" },
-	{
-		label: "Hobbies",
-		to: "/hobbies",
-		children: [{ label: "League of Legends", to: "/hobbies/league-of-legends" }]
-	}
-]);
+const { data } = await useAsyncData("navigation", () => {
+	return queryCollectionNavigation("content").where("index", "=", true);
+});
+const order = ["Home", "Projects", "Hobbies"];
+const navigation = transformNavigation(order, data.value ?? []);
 </script>

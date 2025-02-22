@@ -8,12 +8,7 @@
 </template>
 
 <script setup lang="ts">
-const { data } = await useAsyncData("navigation", () => {
-	return queryCollectionNavigation("content");
-});
-
 const route = useRoute();
-const appConfig = useAppConfig();
 const defaultColor = "rose";
 const routeColors: Record<string, string> = {
 	projects: "indigo",
