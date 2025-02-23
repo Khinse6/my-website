@@ -8,9 +8,10 @@ export default function transformNavigation(
 	if (!items) return []
 	return items
 		.map(({ title, path, children }) => {
+			const normalizedPath = path.endsWith('/') ? path : `${path}/`
 			const transformedItem: NavigationMenuItem = {
 				label: title,
-				to: path,
+				to: normalizedPath,
 			}
 			if (children) {
 				const filteredChildren = children.filter((child) => child.path !== path)

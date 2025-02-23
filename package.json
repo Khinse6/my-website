@@ -4,16 +4,17 @@
 	"type": "module",
 	"packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
 	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
+		"build": "nuxi build",
+		"dev": "nuxi dev",
+		"generate": "nuxi generate",
+		"preview": "nuxi preview",
+		"clean": "nuxi cleanup",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
 		"format": "prettier . --write"
 	},
 	"dependencies": {
-		"@nuxt/content": "^3.2.1",
+		"@nuxt/content": "3.2.1",
 		"@nuxt/eslint": "1.1.0",
 		"@nuxt/ui": "3.0.0-alpha.13",
 		"@nuxthub/core": "0.8.17",
