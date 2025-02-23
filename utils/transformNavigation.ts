@@ -26,6 +26,6 @@ export default function transformNavigation(
 
 			return transformedItem
 		})
-		.filter(Boolean) // TypeScript now knows it's safe to filter out null/undefined
+		.filter(Boolean)
 		.sort((a, b) => order.indexOf(a.label!) - order.indexOf(b.label!))
 }

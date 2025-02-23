@@ -1,7 +1,7 @@
 <template>
 	<UApp>
 		<AppHeader />
-		<UContainer class="min-h-dvh">
+		<UContainer class="flex pt-10">
 			<NuxtPage />
 		</UContainer>
 	</UApp>
