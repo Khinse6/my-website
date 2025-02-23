@@ -8,33 +8,33 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute();
-const defaultColor = "rose";
-const routeColors: Record<string, string> = {
-	projects: "indigo",
-	hobbies: "orange"
-};
-
-const getPrimaryColor = (path: string): string => {
-	for (const keyword in routeColors) {
-		if (path.includes(keyword)) {
-			return routeColors[keyword] ?? defaultColor;
-		}
+	const route = useRoute()
+	const defaultColor = 'rose'
+	const routeColors: Record<string, string> = {
+		projects: 'indigo',
+		hobbies: 'orange',
 	}
-	return defaultColor;
-};
 
-watch(
-	() => route.path,
-	(newPath) => {
-		updateAppConfig({
-			ui: {
-				colors: {
-					primary: getPrimaryColor(newPath)
-				}
+	const getPrimaryColor = (path: string): string => {
+		for (const keyword in routeColors) {
+			if (path.includes(keyword)) {
+				return routeColors[keyword] ?? defaultColor
 			}
-		});
-	},
-	{ immediate: true }
-);
+		}
+		return defaultColor
+	}
+
+	watch(
+		() => route.path,
+		(newPath) => {
+			updateAppConfig({
+				ui: {
+					colors: {
+						primary: getPrimaryColor(newPath),
+					},
+				},
+			})
+		},
+		{ immediate: true }
+	)
 </script>

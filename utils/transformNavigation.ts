@@ -1,23 +1,30 @@
-export default function transformNavigation(order: string[], items: any[]): any[] {
-	if (!items) return [];
+import type { ContentNavigationItem } from '@nuxt/content'
+import type { NavigationMenuItem } from '@nuxt/ui'
+
+export default function transformNavigation(
+	order: string[],
+	items: ContentNavigationItem[]
+): NavigationMenuItem[] {
+	if (!items) return []
 	return items
 		.map(({ title, path, children }) => {
-			const transformedItem: any = {
+			const transformedItem: NavigationMenuItem = {
 				label: title,
-				to: path
-			};
-
+				to: path,
+			}
 			if (children) {
-				const filteredChildren = children.filter(
-					(child: { path: any }) => child.path !== path
-				);
+				const filteredChildren = children.filter((child) => child.path !== path)
+
 				if (filteredChildren.length > 0) {
-					transformedItem.children = transformNavigation(order, filteredChildren);
+					transformedItem.children = transformNavigation(
+						order,
+						filteredChildren
+					)
 				}
 			}
 
-			return transformedItem;
+			return transformedItem
 		})
-		.filter(Boolean)
-		.sort((a, b) => order.indexOf(a.label) - order.indexOf(b.label));
+		.filter(Boolean) // TypeScript now knows it's safe to filter out null/undefined
+		.sort((a, b) => order.indexOf(a.label!) - order.indexOf(b.label!))
 }
