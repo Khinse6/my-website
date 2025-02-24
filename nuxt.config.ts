@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
+	ssr: true,
 	compatibilityDate: '2024-04-03',
 	devtools: { enabled: true },
 	future: {
