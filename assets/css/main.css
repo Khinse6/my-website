@@ -2,8 +2,8 @@
 @import '@nuxt/ui';
 
 @theme {
-	--font-sans: 'Public Sans', sans-serif;
-
+	--font-public: 'Public Sans';
+	--font-roboto-mono: 'Roboto Mono';
 	--ui-text-dimmed: var(--ui-color-neutral-500);
 	--ui-text-muted: var(--ui-color-neutral-400);
 	--ui-text-toned: var(--ui-color-neutral-300);
@@ -49,8 +49,21 @@
 	a {
 		color: var(--color-neutral-400);
 	}
+	li {
+		padding-left: 10ch;
+		text-indent: -8ch;
+		line-height: 1.6rem;
+		font-family: var(--font-roboto-mono);
+	}
+	span {
+		font-family: var(--font-sans);
+		font-weight: 600;
+	}
 	img {
 		display: block;
 		max-width: 100%;
+	}
+	iframe {
+		padding: 1rem 0;
 	}
 }

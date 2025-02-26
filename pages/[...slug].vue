@@ -5,8 +5,8 @@
 		:prose="false"
 		class="mx-auto max-w-2xl grow"
 	/>
-	<div class="sticky top-24.5 h-fit w-64 border-l-2 border-(--ui-primary) pl-4">
-		<p class="mb-2">On this page</p>
+	<div class="sticky top-24.5 h-fit w-64 border-l-2 border-(--ui-primary)">
+		<p class="mb-2 pl-[2ch]">On this page</p>
 		<TableOfContents :links="page?.body.toc?.links" />
 	</div>
 </template>

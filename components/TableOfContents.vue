@@ -1,7 +1,11 @@
 <template>
-	<ul>
-		<li v-for="link in links" :key="link.id">
-			<a :href="'#' + link.id" :class="`pl-${(link.depth - 2) * 4}`">
+	<ol>
+		<li
+			v-for="link in links"
+			:key="link.id"
+			class="pl-[2ch] indent-0 font-sans"
+		>
+			<a :href="'#' + link.id">
 				{{ link.text }}
 			</a>
 			<TableOfContents
@@ -9,7 +13,7 @@
 				:links="link.children"
 			/>
 		</li>
-	</ul>
+	</ol>
 </template>
 
 <script setup lang="ts">

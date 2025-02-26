@@ -5,8 +5,7 @@ export default defineContentConfig({
 			type: 'page',
 			source: {
 				include: '**',
-				exclude: ['**/.obsidian/**', '**/templates/**', '**/.gitignore'],
-				repository: 'https://github.com/Khinse6/obsidian',
+				exclude: ['**/.obsidian/**', '**/templates/**'],
 			},
 			schema: z.object({
 				index: z.boolean(),
