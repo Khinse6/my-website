@@ -7,6 +7,5 @@ index: TRUE
 
 Hello this is the Hobbies index
 
-## [League of Legends](league-of-legends/index.md)
-
+## [League of Legends](hobbies/league-of-legends/index.md)
 

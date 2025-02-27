@@ -14,7 +14,7 @@
 		"format": "prettier . --write"
 	},
 	"dependencies": {
-		"@nuxt/content": "3.2.1",
+		"@nuxt/content": "3.2.2",
 		"@nuxt/eslint": "1.1.0",
 		"@nuxt/ui": "3.0.0-alpha.13",
 		"@nuxthub/core": "0.8.17",

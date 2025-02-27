@@ -18,4 +18,5 @@ export default defineNuxtConfig({
 			processCSSVariables: true,
 		},
 	},
+	content: { renderer: { anchorLinks: false } },
 })

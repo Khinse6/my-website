@@ -7,11 +7,11 @@ index: TRUE
 
 ## Concepts
 
-- [Tempo](concepts/tempo.md)
-- [Wave Managment](concepts/wave-managment.md)
-- [Botlane Matchups](concepts/botlane-matchups.md)
+- [Tempo](hobbies/league-of-legends/concepts/tempo.md)
+- [Wave Managment](hobbies/league-of-legends/concepts/wave-managment.md)
+- [Botlane Matchups](hobbies/league-of-legends/concepts/botlane-matchups.md)
 
 ## Some game reviews
 
-- [Review 17/02/2025](series/review-17-02-2025.md)
-- [VEN vs LCS | 2025-02-24](series/2025-02-24-ven-vs-lcs.md)
+- [VEN vs LCS | 2025-02-24](hobbies/league-of-legends/series/2025-02-24-ven-vs-lcs.md)
+- [VEN vs ESS | 2025-02-25](hobbies/league-of-legends/series/2025-02-25-ven-vs-ess.md)
