@@ -15,3 +15,4 @@ index: TRUE
 
 - [VEN vs LCS | 2025-02-24](hobbies/league-of-legends/series/2025-02-24-ven-vs-lcs.md)
 - [VEN vs ESS | 2025-02-25](hobbies/league-of-legends/series/2025-02-25-ven-vs-ess.md)
+- [VEN vs TSP | 2025-02-27](hobbies/league-of-legends/series/2025-02-27-ven-vs-tsp.md)
