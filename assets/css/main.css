@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import 'tailwindcss' theme(static);
 @import '@nuxt/ui';
 
 @theme {
@@ -29,6 +29,7 @@
 		border-color: var(--color-gray-200, currentColor);
 	}
 	html {
+		scroll-behavior: smooth;
 		scroll-padding-top: 4.5rem;
 	}
 	h1 {
