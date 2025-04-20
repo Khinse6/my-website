@@ -18,5 +18,8 @@ export default defineNuxtConfig({
 			processCSSVariables: true,
 		},
 	},
-	content: { renderer: { anchorLinks: false } },
+	content: {
+		renderer: { anchorLinks: false },
+		preview: { api: 'https://api.nuxt.studio' },
+	},
 })

@@ -1,6 +1,6 @@
 <template>
 	<UApp>
-		<AppHeader />
+		<AppHeader class="print:hidden" />
 		<UContainer class="flex pt-10">
 			<NuxtPage />
 		</UContainer>

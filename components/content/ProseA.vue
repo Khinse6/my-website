@@ -35,7 +35,7 @@
 
 	const normalizedHref = computed(() => {
 		if (isExternal.value) return props.href
-		let path = props.href.startsWith('/') ? props.href : `/${props.href}`
+		const path = props.href.startsWith('/') ? props.href : `/${props.href}`
 		return path.endsWith('/') && path !== '/' ? path.slice(0, -1) : path
 	})
 </script>
