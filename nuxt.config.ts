@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 	future: {
 		compatibilityVersion: 4,
 	},
-	modules: ['@nuxt/content', '@nuxthub/core', '@nuxt/ui', '@nuxt/eslint'],
+	modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/eslint'],
 	css: ['~/assets/css/main.css'],
 	vite: { plugins: [tailwindcss()] },
 	ui: {
