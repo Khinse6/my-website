@@ -1,7 +1,7 @@
 ---
 title: Projects
 aliases: Projects
-index: TRUE
+index: true
 ---
 
 # My Projects

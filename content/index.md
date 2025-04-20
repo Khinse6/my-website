@@ -1,7 +1,7 @@
 ---
 title: Home
 aliases: My website
-index: TRUE
+index: true
 ---
 
 # Welcome to my personal website

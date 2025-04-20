@@ -5,9 +5,9 @@ aliases: Tempo
 
 # Tempo
 
-Tempo is the **pace at which the game plays out**, dictating which team should **act** and which team should **respond**. It is what makes _League of Legends_, despite being a real-time game, fundamentally operate like a **turn-based strategy** — where every action forces a reaction.
+Tempo is the **pace at which the game plays out**, dictating which team should **act** and which team should **respond**. It is what makes *League of Legends*, despite being a real-time game, fundamentally operate like a **turn-based strategy** — where every action forces a reaction.
 
-> _"He who hesitates is lost, but he who rushes blindly will fall."_
+> *"He who hesitates is lost, but he who rushes blindly will fall."*
 
 [How to Identify Tempo Advantage](#How%20to%20Identify%20Tempo%20Advantage)
 
