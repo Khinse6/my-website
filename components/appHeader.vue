@@ -15,8 +15,8 @@
 </template>
 
 <script lang="ts" setup>
-	const { data } = await useAsyncData('navigation', () => {
-		return queryCollectionNavigation('content').where('index', '=', true)
+	const { data: navigation } = await useAsyncData('navigation', async () => {
+		const data = await queryCollectionNavigation('content')
+		return transformNavigation(data, 2)
 	})
-	const navigation = transformNavigation( data.value ?? [])
 </script>
