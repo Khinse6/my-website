@@ -4,6 +4,7 @@ export default defineContentConfig({
 	collections: {
 		content: defineCollection({
 			type: 'page',
+			source: '**',
 			schema: z.object({
 				index: z.boolean(),
 			}),
