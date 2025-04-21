@@ -2,7 +2,6 @@ import type { ContentNavigationItem } from '@nuxt/content'
 import type { NavigationMenuItem } from '@nuxt/ui'
 
 export default function transformNavigation(
-	order: string[],
 	items: ContentNavigationItem[]
 ): NavigationMenuItem[] {
 	if (!items) return []
@@ -16,15 +15,11 @@ export default function transformNavigation(
 				const filteredChildren = children.filter((child) => child.path !== path)
 
 				if (filteredChildren.length > 0) {
-					transformedItem.children = transformNavigation(
-						order,
-						filteredChildren
-					)
+					transformedItem.children = transformNavigation(filteredChildren)
 				}
 			}
 
 			return transformedItem
 		})
 		.filter(Boolean)
-		.sort((a, b) => order.indexOf(a.label!) - order.indexOf(b.label!))
 }

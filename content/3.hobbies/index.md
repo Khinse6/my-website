@@ -1,0 +1,11 @@
+---
+title: Hobbies
+aliases: Hobbies
+index: true
+---
+
+# My Hobbies
+
+Hello this is the Hobbies index
+
+## [League of Legends](hobbies/league-of-legends/)

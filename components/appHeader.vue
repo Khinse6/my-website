@@ -18,6 +18,5 @@
 	const { data } = await useAsyncData('navigation', () => {
 		return queryCollectionNavigation('content').where('index', '=', true)
 	})
-	const order = ['Home', 'Projects', 'Hobbies']
-	const navigation = transformNavigation(order, data.value ?? [])
+	const navigation = transformNavigation( data.value ?? [])
 </script>
