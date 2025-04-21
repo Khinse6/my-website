@@ -1,4 +1,4 @@
-# My Hobbies
+# Hobbies
 
 Hello this is the Hobbies index
 
