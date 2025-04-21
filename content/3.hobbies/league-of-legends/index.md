@@ -1,9 +1,3 @@
----
-title: League of Legends
-aliases: League of Legends
-index: true
----
-
 # League of Legends
 
 ## Concepts

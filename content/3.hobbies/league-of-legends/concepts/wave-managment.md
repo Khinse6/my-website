@@ -1,8 +1,3 @@
----
-title: Wave Managment
-aliases: Wave Managment
----
-
 # Wave Managment
 
 Wave management refers to the strategic manipulation of minion waves to gain an advantage over your opponent. By carefully managing how minions are positioned on the lane, you can create opportunities for ganks, objectives, or vision control.

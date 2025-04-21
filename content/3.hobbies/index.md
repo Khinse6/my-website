@@ -1,9 +1,3 @@
----
-title: Hobbies
-aliases: Hobbies
-index: true
----
-
 # My Hobbies
 
 Hello this is the Hobbies index
