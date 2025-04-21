@@ -1,6 +1,5 @@
 ---
 title: Botlane Matchups
-aliases: Botlane Matchups
 ---
 
 # Botlane Matchups

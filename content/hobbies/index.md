@@ -1,6 +1,5 @@
 ---
 title: Hobbies
-aliases: Hobbies
 index: true
 ---
 

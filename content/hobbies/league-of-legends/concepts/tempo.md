@@ -1,6 +1,5 @@
 ---
 title: Tempo
-aliases: Tempo
 ---
 
 # Tempo

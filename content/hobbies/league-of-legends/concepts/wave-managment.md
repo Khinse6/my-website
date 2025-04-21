@@ -1,6 +1,5 @@
 ---
 title: Wave Managment
-aliases: Wave Managment
 ---
 
 # Wave Managment

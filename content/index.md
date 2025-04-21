@@ -1,6 +1,5 @@
 ---
 title: Home
-aliases: My website
 index: true
 ---
 
