@@ -1,0 +1,77 @@
+en:
+  personal: &personal_info
+    name: "Henrique Simões"
+    contacts:
+      - label: "khinse.nuxt.dev"
+        icon: "i-mdi-link"
+        to: "https://khinse.nuxt.dev/"
+        target: "_blank"
+      - label: "simoes.henrique.mf@gmail.com"
+        icon: "i-mdi-email-outline"
+        to: "mailto:simoes.henrique.mf@gmail.com"
+        target: "_blank"
+      - label: "khinse6"
+        icon: "i-mdi-github"
+        to: "https://github.com/Khinse6"
+        target: "_blank"
+      - label: "khinse"
+        icon: "i-stash-telegram"
+        to: "https://t.me/khinse"
+        target: "_blank"
+
+  skills: &skill_info
+    title: "Skills"
+    items:
+      - name: "Javascript / Typescript"
+        level: 4
+      - name: "C"
+        level: 4
+
+  education: &education_info
+    title: "Education"
+    items:
+      - institution: "Instituto Superior Técnico"
+        degree: "Undergraduate in Electronics Engineering"
+        period: "2021 - 2025"
+      - institution: "Instituto dos Pupilos do Exército"
+        degree: "Vocational Course of Industrial Maintenance Technician"
+        period: "2018 - 2021"
+
+  projects:
+    title: "Projects"
+    items:
+      - name: "Smart Home Stock"
+        description: ""
+        role: ""
+        tech:
+          - "C"
+          - ""
+
+  languages:
+    title: "Languages"
+    items:
+      - language: "Portuguese"
+        level: "Native"
+      - language: "English"
+        level: "B2"
+
+pt:
+  personal: *personal_info
+  skills: *skill_info
+  education:
+    title: "Educação"
+    items:
+      - institution: "Instituto Superior Técnico"
+        degree: "Licenciatura em Engenharia Eletrónica"
+        period: "2021 - 2025"
+      - institution: "Instituto dos Pupilos do Exército"
+        degree: "Curso Profissioonal de Técnico de Manutenção Industrial"
+        period: "2018 - 2021"
+
+  languages:
+    title: "Idiomas"
+    items:
+      - language: "Português"
+        level: "Nativo"
+      - language: "Inglês"
+        level: "B2"
