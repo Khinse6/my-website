@@ -50,3 +50,23 @@
 		aspect-ratio: 16 / 9;
 	}
 }
+
+@media print {
+	:root {
+		--ui-text-dimmed: var(--ui-color-neutral-600);
+		--ui-text-muted: var(--ui-color-neutral-800);
+		--ui-text-toned: var(--ui-color-neutral-900);
+		--ui-text: var(--ui-color-neutral-950);
+		--ui-text-highlighted: var(--ui-primary);
+		--ui-bg: white;
+		--ui-bg-muted: #f8f9fa;
+		--ui-bg-elevated: white;
+		--ui-bg-accented: #f0f0f0;
+		--ui-bg-inverted: black;
+	}
+	html,
+	body {
+		background: white !important;
+		color: black !important;
+	}
+}

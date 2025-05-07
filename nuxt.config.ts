@@ -22,4 +22,7 @@ export default defineNuxtConfig({
 		renderer: { anchorLinks: false },
 		preview: { api: 'https://api.nuxt.studio' },
 	},
+	hub: {
+		browser: true,
+	},
 })

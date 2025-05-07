@@ -1,8 +1,7 @@
 <template>
 	<UApp>
-		<AppHeader class="print:hidden" />
-		<UContainer class="flex pt-10">
+		<NuxtLayout>
 			<NuxtPage />
-		</UContainer>
+		</NuxtLayout>
 	</UApp>
 </template>

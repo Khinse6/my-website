@@ -28,7 +28,8 @@ export const educationSchema = z.object({
 		z.object({
 			institution: z.string(),
 			degree: z.string(),
-			period: z.string(),
+			start: z.string(),
+			end: z.string(),
 		})
 	),
 })

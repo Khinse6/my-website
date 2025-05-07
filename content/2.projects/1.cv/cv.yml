@@ -1,6 +1,6 @@
 en:
   personal: &personal_info
-    name: "Henrique Simões"
+    name: "Henrique Miguel Ferreira Simões"
     contacts:
       - label: "khinse.nuxt.dev"
         icon: "i-mdi-link"
@@ -27,15 +27,17 @@ en:
       - name: "C"
         level: 4
 
-  education: &education_info
+  education:
     title: "Education"
     items:
       - institution: "Instituto Superior Técnico"
         degree: "Undergraduate in Electronics Engineering"
-        period: "2021 - 2025"
+        start: "2021"
+        end: "2025"
       - institution: "Instituto dos Pupilos do Exército"
         degree: "Vocational Course of Industrial Maintenance Technician"
-        period: "2018 - 2021"
+        start: "2018"
+        end: "2021"
 
   projects:
     title: "Projects"
@@ -63,10 +65,12 @@ pt:
     items:
       - institution: "Instituto Superior Técnico"
         degree: "Licenciatura em Engenharia Eletrónica"
-        period: "2021 - 2025"
+        start: "2021"
+        end: "2025"
       - institution: "Instituto dos Pupilos do Exército"
-        degree: "Curso Profissioonal de Técnico de Manutenção Industrial"
-        period: "2018 - 2021"
+        degree: "Curso Profissional de Técnico de Manutenção Industrial"
+        start: "2018"
+        end: "2021"
 
   languages:
     title: "Idiomas"

@@ -15,8 +15,8 @@
 </template>
 
 <script lang="ts" setup>
-	const { data: navigation } = await useAsyncData('navigation', async () => {
-		const data = await queryCollectionNavigation('content')
-		return transformNavigation(data, 2)
-	})
+	import type { NavigationMenuItem } from '@nuxt/ui'
+	defineProps<{
+		navigation: NavigationMenuItem[]
+	}>()
 </script>

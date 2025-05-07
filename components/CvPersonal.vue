@@ -1,9 +1,16 @@
 <template>
 	<section>
 		<h1 class="text-center">{{ personal.name }}</h1>
+
 		<UNavigationMenu
 			:items="personal.contacts"
 			class="justify-center"
+			:ui="{
+				linkLabelExternalIcon:
+					'text-(--ui-text) group-hover:text-(--ui-text-highlighted)',
+				linkLeadingIcon:
+					'text-(--ui-text) group-hover:text-(--ui-text-highlighted)',
+			}"
 		/>
 	</section>
 </template>
