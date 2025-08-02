@@ -4,10 +4,7 @@ export default defineNuxtConfig({
 	ssr: true,
 	compatibilityDate: '2024-04-03',
 	devtools: { enabled: true },
-	future: {
-		compatibilityVersion: 4,
-	},
-	modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/eslint', '@nuxthub/core'],
+	modules: ['@nuxt/content', '@nuxt/ui', '@nuxthub/core', '@nuxtjs/i18n'],
 	css: ['~/assets/css/main.css'],
 	vite: { plugins: [tailwindcss()] },
 	ui: {
@@ -24,5 +21,25 @@ export default defineNuxtConfig({
 	},
 	hub: {
 		browser: true,
+	},
+	i18n: {
+		strategy: 'prefix',
+		defaultLocale: 'pt',
+		locales: [
+			{
+				code: 'pt',
+				name: 'Português',
+			},
+			{
+				code: 'en',
+				name: 'English',
+			},
+		],
+		detectBrowserLanguage: {
+			useCookie: true,
+			alwaysRedirect: true,
+			cookieKey: 'i18n_redirected',
+			redirectOn: 'root',
+		},
 	},
 })
