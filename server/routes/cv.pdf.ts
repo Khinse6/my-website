@@ -5,7 +5,7 @@ export default eventHandler(async (event) => {
 	const loc = query.loc || 'en'
 
 	const url = new URL(getRequestURL(event))
-	const margin = '0.5in'
+	const margin = '0in'
 
 	await page.goto(`${url.origin}/${loc}/cv`, {
 		waitUntil: 'domcontentloaded',

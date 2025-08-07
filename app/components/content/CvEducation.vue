@@ -1,47 +1,43 @@
 <template>
-	<section class="education">
-		<h2>{{ title }}</h2>
-		<ul>
+	<section class="mx-4">
+		<h2 class="font-semibold">{{ title }}</h2>
+		<ul class="space-y-4">
 			<li
 				v-for="(item, index) in sortedItems"
 				:key="index"
+				class="flex"
 			>
-				<div>{{ item.degree }}</div>
-				<div>{{ item.institution }}</div>
-				<div>{{ item.start }} – {{ item.end }}</div>
+				<div class="ml-2 border-l-2 border-black pl-2 font-medium">
+					<span>{{ item.degree }}</span>
+
+					<span class="pl-4 text-xs font-extralight text-nowrap">
+						{{ formatDate(locale, item.start, item.end) }}
+					</span>
+					<p class="font-light">{{ item.institution }}</p>
+				</div>
 			</li>
 		</ul>
 	</section>
 </template>
 
-<script setup>
-	import { computed } from 'vue'
+<script lang="ts" setup>
+	const { locale } = useI18n()
 
-	const props = defineProps({
-		title: {
-			type: String,
-			required: true,
-		},
+	const props = defineProps<{
+		title: string
 		items: {
-			type: Array,
-			required: true,
-			default: () => [],
-		},
-	})
-
-	function parseDate(dateStr) {
-		const lower = String(dateStr || '').toLowerCase()
-		if (lower === 'presente' || lower === 'present' || lower === '') {
-			return new Date(3000, 0) // futura
-		}
-		return new Date(dateStr)
-	}
+			institution: string
+			degree: string
+			start: string
+			end: string
+		}[]
+	}>()
 
 	const sortedItems = computed(() => {
 		return [...props.items].sort((a, b) => {
-			const dateA = parseDate(a.end)
-			const dateB = parseDate(b.end)
-			return dateB - dateA
+			const aDate = new Date(a.end || a.start)
+			const bDate = new Date(b.end || b.start)
+			return bDate.getTime() - aDate.getTime()
 		})
 	})
 </script>

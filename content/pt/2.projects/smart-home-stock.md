@@ -1,6 +1,8 @@
 ---
 date: 2023-10
 website: https://smarthomestock.github.io/SmartHomeStock/
+type: project
+
 ---
 
 # Smart Home Stock
