@@ -1,74 +1,71 @@
 <template>
-	<section class="mx-4 pt-6">
+	<section class="mx-4 flex flex-col pt-8">
 		<h2 class="font-semibold">{{ title }}</h2>
-		<ul class="mt-2 space-y-2">
+		<ol class="mt-2 space-y-4">
 			<li
-				v-for="item in data"
-				:key="item.path"
-				class="flex"
+				v-for="item in items"
+				:key="item.title"
+				class="flex flex-col border-l-2 border-black pl-2"
 			>
-				<div class="ml-2 border-l-2 border-black pl-2">
-					<NuxtLink
-						:to="item.website"
-						class="group inline-flex w-fit items-center gap-2"
+				<NuxtLink
+					v-if="item.website"
+					:to="item.website"
+					class="group flex items-center gap-2"
+				>
+					<h3>{{ item.title }}</h3>
+					<UIcon
+						name="mdi:link-variant"
+						size="md"
+					/>
+				</NuxtLink>
+				<h3 v-else>
+					{{ item.title }}
+				</h3>
+				<div
+					class="text-xs font-light [&>*]:after:mx-1 [&>*]:after:content-['•'] [&>*:last-child]:after:content-['']"
+				>
+					<span>{{ formatDate(locale, item.start, item.end) }}</span>
+					<span v-if="item.role"> {{ item.role }}</span>
+					<span v-if="item.location"> {{ item.location }}</span>
+				</div>
+				<ul v-if="item.description?.length">
+					<li
+						v-for="(line, i) in item.description"
+						:key="i"
 					>
-						<h3 class="text-base font-medium">
-							{{ item.title }}
-						</h3>
-						<UIcon
-							name="mdi:link-variant"
-							variant="ghost"
-							class="size-4"
-							color="neutral"
-							mode="svg"
-						/>
-					</NuxtLink>
-					<p class="text-xs font-light text-nowrap">
-						{{ formatDate(locale, item.date) }}
-					</p>
-					<p>{{ item.description }}</p>
-					<div
-						v-if="item.techstack"
-						class="flex flex-row gap-1 pt-2 text-xs font-medium"
+						{{ line }}
+					</li>
+				</ul>
+				<div
+					v-if="item.techstack"
+					class="flex gap-1 text-xs font-light"
+				>
+					<span>Tech Stack:</span>
+					<ul
+						class="flex [&>*]:after:mx-1 [&>*]:after:content-['•'] [&>*:last-child]:after:content-['']"
 					>
-						<h4>Tech Stack:</h4>
-						<ul class="flex flex-wrap items-center">
-							<li
-								v-for="tech in item.techstack"
-								:key="tech"
-								class="after:mx-1 after:content-['•'] last:after:content-['']"
-							>
-								{{ tech }}
-							</li>
-						</ul>
-					</div>
+						<li v-for="tech in item.techstack">{{ tech }}</li>
+					</ul>
 				</div>
 			</li>
-		</ul>
+		</ol>
 	</section>
 </template>
 
 <script lang="ts" setup>
-	const props = defineProps<{
+	defineProps<{
 		title: string
-		type: 'work' | 'project'
+		items: {
+			title: string
+			website?: string
+			location: string
+			role?: string
+			start: string
+			end?: string
+			description?: string[]
+			techstack?: string[]
+		}[]
 	}>()
 
 	const { locale } = useI18n()
-
-	const { data, error } = await useAsyncData(`${props.type}s`, () => {
-		return queryCollection(locale.value)
-			.select(
-				'path',
-				'title',
-				'description',
-				'date',
-				'website',
-				'type',
-				'techstack'
-			)
-			.where('type', 'LIKE', props.type)
-			.order('date', 'DESC')
-			.all()
-	})
 </script>

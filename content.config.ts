@@ -1,12 +1,9 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 const common_schema = z.object({
-	tags: z.array(z.string()),
+	tags: z.array(z.string()).optional(),
 	image: z.string().optional(),
 	date: z.date(),
-	website: z.string().optional(),
-	type: z.string().optional(),
-	techstack: z.array(z.string()).optional(),
 })
 
 export default defineContentConfig({

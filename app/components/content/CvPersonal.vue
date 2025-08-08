@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="float-left m-0 mr-4 flex h-[1123px] w-1/3 flex-col justify-between bg-linear-to-b from-[#6C3082] to-black p-4 text-white"
+		class="float-left m-0 mr-6 flex h-[1123px] w-1/3 flex-col justify-between bg-linear-to-b from-[#6C3082] to-black p-4 text-white"
 	>
 		<div class="flex flex-col gap-4">
 			<img :src="image" />

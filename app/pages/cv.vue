@@ -2,7 +2,7 @@
 	<ContentRenderer
 		v-if="page"
 		:value="page"
-		class="mx-auto w-[795px] space-y-8 bg-white text-black"
+		class="mx-auto min-h-[1123px] w-[795px] bg-white text-black"
 	/>
 </template>
 
