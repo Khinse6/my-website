@@ -5,7 +5,7 @@
 		<div class="flex flex-col gap-4">
 			<img :src="image" />
 			<h1 class="text-3xl/7 font-bold uppercase">{{ name }}</h1>
-			<h2 class="text-base">{{ title }}</h2>
+			<h2 class="text-base font-semibold">{{ title }}</h2>
 			<p class="text-sm">{{ about }}</p>
 			<div>
 				<h2 class="text-base">{{ language.title }}</h2>

@@ -2,7 +2,7 @@ export default eventHandler(async (event) => {
 	const { page } = await hubBrowser()
 
 	const query = getQuery(event)
-	const loc = query.loc || 'en'
+	const loc = query.loc || 'pt'
 
 	const url = new URL(getRequestURL(event))
 	const margin = '0in'

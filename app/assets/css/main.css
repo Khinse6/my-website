@@ -32,16 +32,6 @@
 		scroll-behavior: smooth;
 		scroll-padding-top: 4.5rem;
 	}
-	h1 {
-		font-size: 1.6rem;
-	}
-	h2 {
-		font-size: 1.5rem;
-		font-weight: 600;
-	}
-	h3 {
-		font-size: 1.4rem;
-	}
 }
 
 @media print {

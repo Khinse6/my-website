@@ -9,12 +9,10 @@ navigation: true
 image: /cv_img.jpg
 name: Henrique Simões
 title: Engenheiro Eletrónico & Desenvolvedor Web
-about: Recém licenciado em Engenharia Eletrónica, sou um trabalhador dedicado e autónomo com facilidade de aprendizagem e de interesse em diversos temas, dedicando o meu tempo a descobrir mais sobre os mesmos. Procuro  aprofundar conhecimentos e partilhar os que possuo.
+about: Recém licenciado em Engenharia Eletrónica, sou um trabalhador dedicado e autónomo com facilidade de aprendizagem e de interesse em diversos temas, dedicando o meu tempo a descobrir mais sobre os mesmos. Procuro aprofundar conhecimentos e partilhar os que possuo.
 language:
   title: Idiomas
-  items:
-    - Português (Nativo)
-    - Inglês (Avançado)
+  items: [Português (Nativo), Inglês (Avançado), Alemão (Básico)]
 contacts:
   - label: Mail
     to: mailto:simoes.henrique.mf@gmail.com
@@ -40,22 +38,30 @@ title: Experiência Profissional
 items:
   - title: Markka Interiores
     website: https://markkainteriores.pt/
-    local: Remoto
+    location: Remoto
     role: Desenvolvedor Web
     start: 2025-03
-    end:
+    end: null
     techstack:
     description:
       - Desenvolvimento e atualização do website
   - title: Vengeance Experts
     website: https://vengeance-experts.nuxt.dev/
-    local: Remoto
+    location: Remoto
     role: Desenvolvedor Web
     start: 2024-11
     end:
-    techstack:  [Nuxt (Typescript), Supabase Database (Postgres)]
+    techstack: [Nuxt (Typescript), Supabase Database (Postgres)]
     description:
       - Como projeto freelance, foi criado um website para a organização de e-sports Vengeance Experts, com recurso à framework Nuxt e à base de dados relacional supabase.
+  - title: Instituto Hidrográfico
+    location: 1200 – 677 Lisboa, Portugal
+    role: Estagiário
+    start: 2021-03
+    end: 2021-06
+    techstack:
+    description:
+      - Desenvolvimento e atualização do website
 ---
 ::
 
