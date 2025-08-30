@@ -10,12 +10,12 @@ export default defineContentConfig({
 	collections: {
 		pt: defineCollection({
 			type: 'page',
-			source: 'pt/**/*.md',
+			source: 'pt/**',
 			schema: common_schema,
 		}),
 		en: defineCollection({
 			type: 'page',
-			source: 'en/**/*.md',
+			source: 'en/**',
 			schema: common_schema,
 		}),
 	},

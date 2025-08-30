@@ -29,10 +29,14 @@ export default defineNuxtConfig({
 			{
 				code: 'pt',
 				name: 'Português',
+				language: 'pt-PT',
+				dir: 'ltr',
 			},
 			{
 				code: 'en',
 				name: 'English',
+				language: 'en-US',
+				dir: 'ltr',
 			},
 		],
 		detectBrowserLanguage: {
