@@ -3,7 +3,11 @@
 		class="float-left m-0 mr-4 flex h-[1123px] w-1/3 flex-col justify-between p-4 text-white gradient"
 	>
 		<div class="flex flex-col gap-4">
-			<img :src="image" />
+			<NuxtImg
+				:src="image"
+				format="webp"
+				sizes="512px"
+			/>
 			<h1 class="text-3xl/7 font-bold uppercase">{{ name }}</h1>
 			<h2 class="text-base font-semibold">{{ title }}</h2>
 			<p class="text-sm">{{ about }}</p>
@@ -34,6 +38,8 @@
 </template>
 
 <script lang="ts" setup>
+	import { NuxtImg } from '#components'
+
 	defineProps<{
 		image: string
 		name: string

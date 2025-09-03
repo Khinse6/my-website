@@ -4,7 +4,13 @@ export default defineNuxtConfig({
 	ssr: true,
 	compatibilityDate: '2024-04-03',
 	devtools: { enabled: true },
-	modules: ['@nuxt/content', '@nuxt/ui', '@nuxthub/core', '@nuxtjs/i18n'],
+	modules: [
+		'@nuxt/content',
+		'@nuxt/ui',
+		'@nuxthub/core',
+		'@nuxtjs/i18n',
+		'@nuxt/image',
+	],
 	css: ['~/assets/css/main.css'],
 	vite: { plugins: [tailwindcss()] },
 	ui: {

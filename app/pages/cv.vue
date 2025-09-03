@@ -1,8 +1,8 @@
 <template>
 	<ContentRenderer
+		class="mx-auto h-full w-full bg-white text-black"
 		v-if="page"
 		:value="page"
-		class="mx-auto min-h-[1123px] w-[795px] bg-white text-black"
 	/>
 </template>
 
@@ -17,3 +17,9 @@
 		return queryCollection(locale.value).path(route.path).first()
 	})
 </script>
+
+<style scoped>
+	@page {
+		size: A4 portrait;
+	}
+</style>
